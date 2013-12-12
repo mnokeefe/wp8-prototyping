@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Title block allowing child pages to override -->
+    <title>{% block title %}Windows Phone 8 prototyping{% endblock %}</title>
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+    <!-- Styles -->
+    {{ "app.css" | asset_url | stylesheet_tag }}
+    <!-- Style block allowing child pages to inject their own styles -->
+    {% block styles %}{% endblock %}
+  </head>
+  <body>
+    <!-- Page content -->
+    {% block content %}{% endblock %}
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    {{ "panorama.js" | asset_url | script_tag }}
+    {{ "app.js" | asset_url | script_tag }}
+    <!-- Script block allowing child pages to inject their own scripts -->
+    {% block scripts %}{% endblock %}
+  </body>
+</html>

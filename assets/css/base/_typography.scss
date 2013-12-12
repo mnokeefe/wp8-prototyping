@@ -1,0 +1,20 @@
+$segoeFontFamily:       'Segoe UI', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+$segoeLightFontFamily:  'Segoe UI Light', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+$segoeBoldFontFamily:   'Segoe UI Semibold', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif;
+$cambriaFontFamily:     'Cambria', 'PT Serif Caption', Verdana, Arial, Helvetica, sans-serif;
+
+
+body {
+  font-family: $segoeLightFontFamily;
+  color: $white;
+}
+
+h1 {
+  font-size: 72px;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: normal;
+}
