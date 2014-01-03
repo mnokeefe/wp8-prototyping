@@ -1,0 +1,14 @@
+.pivot {
+  h1 {
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  .ui-panorama-item {
+    padding: 1rem 1rem 13rem 1rem; // extra bottom padding is a hack for scrolling to compensate for positioning and app bar
+    top: 7rem;
+  }
+  h2 {
+    position: fixed;
+    top: 3rem;
+  }
+}

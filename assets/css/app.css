@@ -339,16 +339,18 @@ table {
   border-spacing: 0; }
 
 body {
-  font-family: "Segoe UI Light", "Open Sans Light", Verdana, Arial, Helvetica, sans-serif;
-  color: white; }
+  font-family: "Open Sans", sans-serif;
+  color: #252525;
+  font-size: 16px;
+  font-weight: 300; }
 
 h1 {
   font-size: 72px;
-  font-weight: normal; }
+  font-weight: 700; }
 
 h2 {
-  font-size: 36px;
-  font-weight: normal; }
+  font-size: 42px;
+  font-weight: 300; }
 
 .ui-panorama, .ui-panorama-click-wrapper, body {
   overflow: hidden;
@@ -356,7 +358,11 @@ h2 {
   -ms-touch-action: none; }
 
 .ui-panorama h1 {
-  margin-top: 0px; }
+  margin-top: 0px;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 10; }
 
 .ui-panorama .ui-panorama-item h2,
 .ui-panorama h1 {
@@ -366,25 +372,125 @@ h2 {
 .ui-panorama .ui-panorama-items {
   position: relative; }
 
-.ui-panorama .ui-panorama-items .ui-panorama-item {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 10px;
-  overflow-x: hidden;
-  overflow-y: auto; }
-
 .ui-panorama-items {
   display: none; }
 
 .ui-loader {
   display: none; }
 
-.ui-panorama {
-  background: #2d2d2d; }
-
 .ui-panorama-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8rem 1rem 1rem 1rem;
+  overflow: hidden;
   opacity: 0.8; }
+  .ui-panorama-item img {
+    width: 100%; }
+
+h2 {
+  margin: 0 0 1rem 0; }
+
+.js-app-bar-icons {
+  display: none; }
+
+.app-bar {
+  background: #2a2a2a;
+  position: fixed;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  text-align: center; }
+
+.app-bar__icon {
+  display: inline-block;
+  border-radius: 50%;
+  margin-top: 6px;
+  height: 44px;
+  width: 44px;
+  border: 3px solid #fbfbf9;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #fbfbf9; }
+  .app-bar__icon i {
+    padding-top: 8px; }
+
+.pivot h1 {
+  font-size: 1rem;
+  text-transform: uppercase; }
+.pivot .ui-panorama-item {
+  padding: 1rem 1rem 13rem 1rem;
+  top: 7rem; }
+.pivot h2 {
+  position: fixed;
+  top: 3rem; }
+
+.ui-panorama--home {
+  background: #f3f0e9; }
+
+.menu {
+  font-size: 3rem;
+  color: #252525;
+  background: #ffde00; }
+
+.new-releases li {
+  width: 48%;
+  margin-right: 1%;
+  float: left; }
+
+.playlist-item {
+  font-size: 1.5rem;
+  height: 4rem;
+  background: #fbfbf9; }
+  .playlist-item p {
+    padding-top: 0.5rem; }
+  .playlist-item img {
+    float: left;
+    margin-right: 1rem;
+    width: 4rem; }
+
+.borrowed li {
+  width: 18%;
+  margin-right: 1%;
+  float: left; }
+
+.album {
+  height: 5rem;
+  margin-bottom: 1rem; }
+  .album h3 {
+    margin: 0;
+    padding: 1rem 0 0 0; }
+  .album p {
+    margin: 0; }
+  .album img {
+    float: left;
+    margin-right: 1rem;
+    width: 5rem; }
+
+.tracks li:nth-child(even) {
+  background-color: #fbfbf9; }
+.tracks li:nth-child(odd) {
+  background-color: #f3f0e9; }
+
+.tracks__track {
+  position: relative;
+  padding: 1rem;
+  margin: 0; }
+  .tracks__track h3, .tracks__track p {
+    margin: 0;
+    width: 85%; }
+
+.borrow-button {
+  position: absolute;
+  right: 1rem;
+  top: 25%; }
+  .borrow-button img {
+    width: 40px; }
 
 body {
   overflow: hidden; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }

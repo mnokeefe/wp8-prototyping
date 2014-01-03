@@ -1,29 +1,125 @@
 {% block content %} 
 <div data-role="page" id="index">
-  <div class="ui-panorama">
-    <h1>application title</h1>
+  <div class="ui-panorama ui-panorama--home">
+    <h1>bloom</h1>
+
     <div class='ui-panorama-items'>
-      <div class="ui-panorama-item">
-        <h2>screen one</h2>
-        <p>content</p>
+      <div class="ui-panorama-item menu">
+        <ul>
+          <li>all radio</li>
+          <li>library</li>
+          <li>account</li>
+          <li>settings</li>
+          <li>subscriptions</li>
+          <li>history</li>
+        </ul>
       </div>
-      <div class="ui-panorama-item">
-        <h2>screen two</h2>
-        <p>content</p>
+
+      <div class="ui-panorama-item radio">
+        <h2>radio</h2>
+        <div class="panorama-item__content">
+          {{ "radio.jpg" | asset_url | image_tag }}
+        </div>
+        
       </div>
-      <div class="ui-panorama-item">
-        <h2>screen three</h2>
-        <p>content</p>
+
+      <div class="ui-panorama-item new-releases">
+        <h2>new releases</h2>
+        <div class="panorama-item__content">
+          <ul>
+            <li><img src="http://imgsrc.me/300x300/9a1e1b/f3f3f3?"></li>
+            <li><img src="http://imgsrc.me/300x300/9a1e1b/f3f3f3?"></li>
+            <li><img src="http://imgsrc.me/300x300/9a1e1b/f3f3f3?"></li>
+            <li><img src="http://imgsrc.me/300x300/9a1e1b/f3f3f3?"></li>
+            <li><img src="http://imgsrc.me/300x300/9a1e1b/f3f3f3?"></li>
+            <li><img src="http://imgsrc.me/300x300/9a1e1b/f3f3f3?"></li>
+            <li><img src="http://imgsrc.me/300x300/9a1e1b/f3f3f3?"></li>
+            <li><img src="http://imgsrc.me/300x300/9a1e1b/f3f3f3?"></li>
+          </ul>
+        </div>
       </div>
-      <div class="ui-panorama-item" >
-        <h2>screen four</h2>
-        <p>content</p>
+
+      <div class="ui-panorama-item playlists" >
+        <h2>playlist</h2>
+        <div class="panorama-item__content">
+          <ul>
+            <li class="playlist-item">
+              <img src="http://imgsrc.me/60x60/9a1e1b/f3f3f3?">
+              <p>Playlist title</p>
+            </li>
+            <li class="playlist-item">
+              <img src="http://imgsrc.me/60x60/9a1e1b/f3f3f3?">
+              <p>Playlist title</p>
+            </li>
+            <li class="playlist-item">
+              <img src="http://imgsrc.me/60x60/9a1e1b/f3f3f3?">
+              <p>Playlist title</p>
+            </li>
+            <li class="playlist-item">
+              <img src="http://imgsrc.me/60x60/9a1e1b/f3f3f3?">
+              <p>Playlist title</p>
+            </li>
+            <li class="playlist-item">
+              <img src="http://imgsrc.me/60x60/9a1e1b/f3f3f3?">
+              <p>Playlist title</p>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="ui-panorama-item">
-        <h2>screen five</h2>
-        <p>content</p>
+
+      <div class="ui-panorama-item borrowed">
+        <h2>borrowed</h2>
+        <div class="panorama-item__content">
+          <ul>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+            <li>{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </div>
+{% include "app-bar" %}
+{% endblock %}
+
+{% block scripts %}
+  {{ "_home.js" | asset_url | script_tag }}
 {% endblock %}

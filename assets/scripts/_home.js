@@ -1,14 +1,14 @@
-(function($){
-  $.fn.disableSelection = function() {
-    return this
-    .attr('unselectable', 'on')
-    .css('user-select', 'none')
-    .on('selectstart', false);
-  };
-})(jQuery);
+// (function($){
+//   $.fn.disableSelection = function() {
+//     return this
+//     .attr('unselectable', 'on')
+//     .css('user-select', 'none')
+//     .on('selectstart', false);
+//   };
+// })(jQuery);
 
 $(function(){
-  $(".ui-panorama").disableSelection();
+  //$(".ui-panorama").disableSelection();
   $(".ui-panorama").panorama({
     debug: false,
     clickedWrapperClass: 'ui-panorama-click-wrapper',
@@ -27,17 +27,5 @@ $(function(){
     backPointPercentage: 30, /* prevent swipe when user moved screen less than 30% */
     controlInitializedEventName: 'controlInitialized',
     selectedItemChangedEventName: 'selectedItemChanged'
-  });
-
-
-  $(document).on("keydown", function (e) {
-    // left
-    if (e.which == 39) {
-        $(".ui-panorama").data('obj').goToNext();
-    }
-    // right
-    if (e.which == 37) {
-        $(".ui-panorama").data('obj').goToPrevious();
-    }
   });
 })

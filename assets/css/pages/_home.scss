@@ -1,0 +1,39 @@
+.ui-panorama--home {
+  background: $panorama-bg;
+}
+
+.menu {
+  font-size: 3rem;
+  color: $black;
+  background: $bloom-yellow;
+}
+
+.new-releases {
+  li {
+    width: 48%;
+    margin-right: 1%;
+    float: left;
+  }
+}
+
+.playlist-item {
+  font-size: 1.5rem;
+  height: 4rem;
+  background: $white;
+  p {
+    padding-top: 0.5rem;
+  }
+  img {
+    float: left;
+    margin-right: 1rem;
+    width: 4rem;
+  }
+}
+
+.borrowed {
+  li {
+    width: 18%;
+    margin-right: 1%;
+    float: left;
+  }
+}
