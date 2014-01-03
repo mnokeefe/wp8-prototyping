@@ -1,14 +1,4 @@
-// (function($){
-//   $.fn.disableSelection = function() {
-//     return this
-//     .attr('unselectable', 'on')
-//     .css('user-select', 'none')
-//     .on('selectstart', false);
-//   };
-// })(jQuery);
-
 $(function(){
-  //$(".ui-panorama").disableSelection();
   $(".ui-panorama").panorama({
     debug: false,
     clickedWrapperClass: 'ui-panorama-click-wrapper',

@@ -24,8 +24,10 @@
         <ul>
           {% for item in model.tracks %}
           <li class="tracks__track">
-            <h3>{{ item.title }}</h3>
-            <p>{{ model.name }}</p>
+            <a href="/player">
+              <h3>{{ item.title }}</h3>
+              <p>{{ model.name }}</p>
+            </a>
             <a href="" class="borrow-button"><img src="http://imgsrc.me/40x40/9a1e1b/f3f3f3?"></a>
           </li>
           {% endfor %}
@@ -39,7 +41,7 @@
         <img src="http://imgsrc.me/300x300/9a1e1b/f3f3f3/album art?showDimensions=0&">
         <p>The Rolling Stones are an English rock band formed in London in 1962 who were in the vanguard of the British Invasion of bands that became popular in the US from 1964–65 and an integral part of the counterculture of the 1960s. The Rolling Stones were also instrumental in making blues a major part of rock and roll, and of changing the international focus of blues culture to the blues typified by John Lee Hooker and by Chess Records artists such as Muddy Waters, writer of "Rollin' Stone", the song after which the band is named. American music critic Robert Palmer said the Rolling Stones' "remarkable endurance" stems from being "rooted in traditional verities, in rhythm-and-blues and soul music" while "more ephemeral pop fashions have come and gone".</p>
         <p>The first settled line-up had Brian Jones on guitar and harmonica, Ian Stewart on piano, Mick Jagger on lead vocals and harmonica, Keith Richards on guitar and backing vocals, Bill Wyman on bass and Charlie Watts on drums</p>
-        <a href="#">View on Wikipedia THIS COULD GO ON APP BAR</a>
+        <a class="info-link" href="#">View on Wikipedia THIS COULD GO ON APP BAR</a>
         <div class="js-app-bar-icons">
           <span class="app-bar__icon js-icon-added"><i class="fa fa-thumbs-o-up"></i></span>
           <span class="app-bar__icon js-icon-added"><i class="fa fa-thumbs-o-down"></i></span>

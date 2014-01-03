@@ -6,6 +6,8 @@ $('.ui-panorama').on('selectedItemChanged', function(){
   $(".ui-panorama-item-active .js-icon-added").clone().appendTo(".js-app-bar");
 })
 
+$(".js-static-app-bar-icons .js-icon-added").clone().appendTo(".js-app-bar"); // For single pages
+
 // Keybinding for desktop
 $(document).on("keydown", function (e) {
   // left
@@ -17,3 +19,14 @@ $(document).on("keydown", function (e) {
     $(".ui-panorama").data('obj').goToPrevious();
   }
 });
+
+// Disable selection
+(function($){
+  $.fn.disableSelection = function() {
+    return this
+    .attr('unselectable', 'on')
+    .css('user-select', 'none')
+    .on('selectstart', false);
+  };
+})(jQuery);
+$("body").disableSelection();

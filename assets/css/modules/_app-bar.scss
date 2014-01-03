@@ -21,3 +21,12 @@
     padding-top: 8px;
   }
 }
+
+.app-bar__expand {
+  font-size: 1.5rem;
+  color: $white;
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  line-height: 1;
+}

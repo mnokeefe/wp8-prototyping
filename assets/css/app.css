@@ -415,6 +415,14 @@ h2 {
   .app-bar__icon i {
     padding-top: 8px; }
 
+.app-bar__expand {
+  font-size: 1.5rem;
+  color: #fbfbf9;
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  line-height: 1; }
+
 .pivot h1 {
   font-size: 1rem;
   text-transform: uppercase; }
@@ -487,6 +495,29 @@ h2 {
   .borrow-button img {
     width: 40px; }
 
+.info-link {
+  width: 100%;
+  text-decoration: underline;
+  font-weight: 400; }
+
+.player__header {
+  padding: 1rem;
+  text-align: center; }
+  .player__header h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0; }
+  .player__header a {
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    line-height: 2rem; }
+
+.player__image {
+  width: 100%;
+  margin: 0; }
+
 body {
   overflow: hidden; }
 
@@ -494,3 +525,12 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0; }
+
+.placeholder {
+  background: grey;
+  text-align: center;
+  padding: 1rem; }
+
+a {
+  text-decoration: none;
+  color: #252525; }
