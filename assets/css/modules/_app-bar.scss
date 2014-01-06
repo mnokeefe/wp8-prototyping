@@ -1,30 +1,42 @@
 .app-bar {
+  padding: 6px 0 0 0;
   background: #2a2a2a;
   position: fixed;
   bottom: 0;
-  height: 60px;
+  height: 54px;
   width: 100%;
   text-align: center;
+  color: $white;
+  a {
+    color: $white;
+  }
+}
+
+.app-bar__item {
+  display: inline-block;
+  text-align: center;
+  padding: 0 0.5rem;
+  margin: 0;
+  p {
+    font-size: 0.8rem;
+    margin: 0;
+  }
 }
 
 .app-bar__icon {
-  display: inline-block;
+  display: block;
   border-radius: 50%;
-  margin-top: 6px;
   height: 44px;
   width: 44px;
   border: 3px solid $white;
-  text-align: center;
-  font-size: 1.6rem;
-  color: $white;
   i {
     padding-top: 8px;
+    font-size: 1.6rem;
   }
 }
 
 .app-bar__expand {
   font-size: 1.5rem;
-  color: $white;
   position: absolute;
   right: 1rem;
   top: 0.5rem;

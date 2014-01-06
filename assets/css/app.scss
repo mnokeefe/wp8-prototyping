@@ -38,3 +38,34 @@ a {
   text-decoration: none;
   color: $link-color;
 }
+
+// Standard page title
+.page-title {
+  padding: 1rem;
+}
+
+// Track listings
+.tracks__track {
+  position: relative;
+  padding: 1rem;
+  margin: 0;
+  h3, p {
+    margin: 0;
+    width: 85%;
+  }
+}
+
+.borrow-button {
+  position: absolute;
+  right: 1rem;
+  top: 25%;
+  img {
+    width: 2rem;
+  }
+}
+
+.tracks__played-time {
+  position: absolute;
+  right: 4rem;
+  top: 30%;
+}

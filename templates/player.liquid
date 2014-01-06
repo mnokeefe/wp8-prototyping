@@ -1,19 +1,37 @@
 {% block content %} 
-<div class="player__header">
-  <h1>I'm Free • The Rolling Stones</h1>
-  <span>The Rolling Stones Radio</span>
-  <a><i class="fa fa-list-ul"></i></a>
-</div>
-<div class="placeholder">Progress bar</div>
-<img class="player__image" src="http://imgsrc.me/300x300/9a1e1b/f3f3f3/album art?showDimensions=0&">
-<div class="placeholder">Player controls</div>
+<div class="ui-panorama-item-active">
+  <div class="player__header">
+    <h1>I'm Free • The Rolling Stones</h1>
+    <span>The Rolling Stones Radio</span>
+    <a><i class="fa fa-list-ul"></i></a>
+  </div>
+  <div class="placeholder">Progress bar</div>
+  <img class="player__image" src="http://imgsrc.me/300x300/9a1e1b/f3f3f3/album art?showDimensions=0&">
+  <div class="placeholder">Player controls</div>
 
-<div class="js-static-app-bar-icons">
-  <span class="app-bar__icon js-icon-added"><i class="fa fa-thumbs-o-up"></i></span>
-  <span class="app-bar__icon js-icon-added"><i class="fa fa-thumbs-o-down"></i></span>
-  <a class="app-bar__icon js-icon-added" href="/artist"><i class="fa fa-star"></i></a>
-  <a class="app-bar__icon js-icon-added" href=""><i class="fa fa-plus"></i></a>
-  <a class="app-bar__icon js-icon-added" href=""><i class="fa fa-dot-circle-o"></i></a>
+  <ul class="js-app-bar-icons">
+    <li class="app-bar__item js-icon-added">
+      <span class="app-bar__icon"><i class="fa fa-thumbs-o-up"></i></span>
+      <p>Good</p>
+    </li>
+    <li class="app-bar__item js-icon-added">
+      <span class="app-bar__icon"><i class="fa fa-thumbs-o-down"></i></span>
+      <p>Bad</p>
+    </li>
+    <li class="app-bar__item js-icon-added">
+      <a class="app-bar__icon"><i class="fa fa-star"></i></a>
+      <p>Artist</p>
+    </li>
+    <li class="app-bar__item js-icon-added">
+      <a class="app-bar__icon"><i class="fa fa-plus"></i></a>
+      <p>Add to playlist</p>
+    </li>
+    <li class="app-bar__item js-icon-added">
+      <a class="app-bar__icon"><i class="fa fa-dot-circle-o"></i></a>
+      <p>Album page</p>
+    </li>
+  </ul>
 </div>
+
 {% include "app-bar" %}
 {% endblock %}

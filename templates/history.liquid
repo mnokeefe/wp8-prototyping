@@ -1,0 +1,20 @@
+{% block content %} 
+<h2 class="page-title">{{ model.name }}</h2>
+<ul>
+  {% for item in model.tracks %}
+  <li class="tracks__track">
+    <a href="/player">
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.artist }}</p>
+    </a>
+    <span class="tracks__played-time">{{ item.played }}</span>
+    <a href="" class="borrow-button"><img src="http://imgsrc.me/40x40/9a1e1b/f3f3f3?"></a>
+  </li>
+  {% endfor %}
+</ul>
+<div class="js-app-bar-icons">
+  <span class="app-bar__icon js-icon-added"><i class="fa fa-star"></i></span>
+</div>
+
+{% include "app-bar" %}
+{% endblock %}

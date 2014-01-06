@@ -15,34 +15,6 @@
   }
 }
 
-.tracks {
-  li:nth-child(even) {
-    background-color: $white;
-  }
-  li:nth-child(odd) {
-    background-color: $grey;
-  }
-}
-
-.tracks__track {
-  position: relative;
-  padding: 1rem;
-  margin: 0;
-  h3, p {
-    margin: 0;
-    width: 85%;
-  }
-}
-
-.borrow-button {
-  position: absolute;
-  right: 1rem;
-  top: 25%;
-  img {
-    width: 40px;
-  }
-}
-
 .info-link {
   width: 100%;
   text-decoration: underline;
