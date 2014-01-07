@@ -1,0 +1,34 @@
+{% block content %}
+<!-- TODO: Solve problem with “Various artists” -->
+<div class="ui-panorama-item-active">
+  <div class="page-header">
+    <h1>{{ model.name }}</h1>
+    <span>{{ model.artist }}</span>
+  </div>
+  <ul>
+    {% for item in model.tracks %}
+    <li class="tracks__track">
+      <a href="/player">
+        <h3>{{ item.title }}</h3>
+      </a>
+      <a href="" class="borrow-button"><img src="http://imgsrc.me/40x40/9a1e1b/f3f3f3?"></a>
+    </li>
+    {% endfor %}
+  </ul>
+  <ul class="js-app-bar-icons">
+    <li class="app-bar__item js-icon-added">
+      <a class="app-bar__icon" href="/artist"><i class="fa fa-star"></i></a>
+      <p>Artist page</p>
+    </li>
+    <li class="app-bar__item js-icon-added">
+      <span class="app-bar__icon"><i class="fa fa-lemon-o"></i></span>
+      <p>Borrow all</p>
+    </li>
+    <li class="app-bar__item js-icon-added">
+      <span class="app-bar__icon"><i class="fa fa-plus"></i></span>
+      <p>Playlist all</p>
+    </li>
+  </ul>
+</div>
+{% include "app-bar" %}
+{% endblock %}
