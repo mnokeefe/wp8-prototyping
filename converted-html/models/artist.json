@@ -1,0 +1,61 @@
+{
+  "name": "The Rolling Stones",
+  "albums": [
+    {
+      "title": "Out of our heads",
+      "year": "1966"
+    },
+    {
+      "title": "Aftermath",
+      "year": "1967"
+    },
+    {
+      "title": "Between the Buttons",
+      "year": "1967"
+    },
+    {
+      "title": "Beggars Banquet",
+      "year": "1968"
+    },
+    {
+      "title": "Let it Bleed",
+      "year": "1969"
+    },
+    {
+      "title": "Sticky Fingers",
+      "year": "1971"
+    }
+  ],
+  "tracks": [
+    {
+      "title": "Gimme Shelter"
+    },
+    {
+      "title": "Sympathy For The Devil"
+    },
+    {
+      "title": "Shattered (Remastered)"
+    },
+    {
+      "title": "Just My Imagination (Running Away With Me)(Remixed)"
+    },
+    {
+      "title": "Some Girls (Remastered)"
+    },
+    {
+      "title": "Before They Make Me Run (Remastered)"
+    },
+    {
+      "title": "She Said Yeah"
+    },
+    {
+      "title": "Soul Survivor"
+    },
+    {
+      "title": "Beast Of Burden (Remastered)"
+    },
+    {
+      "title": "Far Away Eyes (Remastered)"
+    }
+  ]
+}

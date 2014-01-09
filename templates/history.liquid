@@ -11,13 +11,11 @@
         <p>{{ item.artist }}</p>
       </a>
       <span class="tracks__played-time">{{ item.played }}</span>
-      <a href="" class="borrow-button"><img src="http://imgsrc.me/40x40/9a1e1b/f3f3f3?"></a>
+      <a href="" class="borrow-button"><i class="fa fa-lemon-o"></i></a>
     </li>
     {% endfor %}
   </ul>
-  <div class="js-app-bar-icons">
-    <span class="app-bar__icon js-icon-added"><i class="fa fa-star"></i></span>
-  </div>
+  <!-- TODO: Selected song, add to playlist/share -->
 </div>
 {% include "app-bar" %}
 {% endblock %}

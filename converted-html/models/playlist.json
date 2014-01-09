@@ -1,0 +1,45 @@
+{
+  "name": "Playlist",
+  "tracks": [
+    {
+      "title": "Beast Of Burden (Remastered)",
+      "artist": "The Rolling Stones"
+    },
+    {
+      "title": "Before They Make Me Run (Remastered)",
+      "artist": "The Rolling Stones"
+    },
+    {
+      "title": "Far Away Eyes (Remastered)",
+      "artist": "The Rolling Stones"
+    },
+    {
+      "title": "Gimme Shelter",
+      "artist": "The Rolling Stones"
+    },
+    {
+      "title": "Just My Imagination (Running Away With Me)(Remixed)",
+      "artist": "The Rolling Stones"
+    },
+    {
+      "title": "Some Girls (Remastered)",
+      "artist": "The Rolling Stones"
+    },
+    {
+      "title": "Shattered (Remastered)",
+      "artist": "The Rolling Stones"
+    },
+    {
+      "title": "She Said Yeah",
+      "artist": "The Rolling Stones"
+    },
+    {
+      "title": "Soul Survivor",
+      "artist": "The Rolling Stones"
+    },
+    {
+      "title": "Sympathy For The Devil",
+      "artist": "The Rolling Stones"
+    }
+  ]
+}

@@ -1,118 +1,125 @@
+{% model "library.json" %}
+
 {% block content %} 
 <div data-role="page" id="index">
   <div class="ui-panorama ui-panorama--home">
     <h1>bloom</h1>
 
     <div class='ui-panorama-items'>
-      <div class="ui-panorama-item menu">
-        <ul>
-          <li><a href="/radio">all radio</a></li>
-          <li>library</li>
-          <li>account</li>
-          <li>settings</li>
-          <li>subscriptions</li>
-          <li><a href="/history">history</a></li>
-        </ul>
-      </div>
-
       <div class="ui-panorama-item radio">
-        <h2>radio</h2>
+        <h2>Radio</h2>
         <div class="panorama-item__content">
-          <a href="/player">{{ "radio.jpg" | asset_url | image_tag }}</a>
+          <a href="/radio" class="placeholder"><span>All genres<br>(placeholder)</span></a>
+          <a href="/player" class="placeholder"><span>Your favourite genres<br>(placeholder)</span></a>
         </div>
       </div>
 
       <div class="ui-panorama-item new-releases">
-        <h2>new releases</h2>
+        <h2>New releases</h2>
         <div class="panorama-item__content">
           <ul>
-            <li><img src="http://imgsrc.me/300x300/9a1e1b/f3f3f3?"></li>
-            <li><img src="http://imgsrc.me/300x300/9a1e1b/f3f3f3?"></li>
-            <li><img src="http://imgsrc.me/300x300/9a1e1b/f3f3f3?"></li>
-            <li><img src="http://imgsrc.me/300x300/9a1e1b/f3f3f3?"></li>
-            <li><img src="http://imgsrc.me/300x300/9a1e1b/f3f3f3?"></li>
-            <li><img src="http://imgsrc.me/300x300/9a1e1b/f3f3f3?"></li>
-            <li><img src="http://imgsrc.me/300x300/9a1e1b/f3f3f3?"></li>
-            <li><img src="http://imgsrc.me/300x300/9a1e1b/f3f3f3?"></li>
+            <li><a href="/album"><img src="http://imgsrc.me/300x300/9a1e1b/f3f3f3/album image?showDimensions=0&"></a></li>
+            <li><a href="/album"><img src="http://imgsrc.me/300x300/9a1e1b/f3f3f3/album image?showDimensions=0&"></a></li>
+            <li><a href="/album"><img src="http://imgsrc.me/300x300/9a1e1b/f3f3f3/album image?showDimensions=0&"></a></li>
+            <li><a href="/album"><img src="http://imgsrc.me/300x300/9a1e1b/f3f3f3/album image?showDimensions=0&"></a></li>
+            <li><a href="/album"><img src="http://imgsrc.me/300x300/9a1e1b/f3f3f3/album image?showDimensions=0&"></a></li>
+            <li><a href="/album"><img src="http://imgsrc.me/300x300/9a1e1b/f3f3f3/album image?showDimensions=0&"></a></li>
+            <li><a href="/album"><img src="http://imgsrc.me/300x300/9a1e1b/f3f3f3/album image?showDimensions=0&"></a></li>
+            <li><a href="/album"><img src="http://imgsrc.me/300x300/9a1e1b/f3f3f3/album image?showDimensions=0&"></a></li>
           </ul>
         </div>
       </div>
 
-      <div class="ui-panorama-item playlists" >
-        <h2>playlist</h2>
+      <div class="ui-panorama-item">
+        <h2>Playlists</h2>
+        <ul>
+          {% for item in model.playlists %}
+          <li class="playlist">
+            <a href="/playlist">
+              <img src="http://imgsrc.me/80x80/9a1e1b/f3f3f3/playlist image?showDimensions=0&">
+              <h3>{{ item.title }}</h3>
+              <p>{{ item.totalTracks }} tracks</p>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+        <ul class="js-app-bar-icons">
+          <li class="app-bar__item">
+            <a class="app-bar__icon" href="/playlist"><i class="fa fa-plus"></i></a>
+            <a class="app-bar__label" href="/playlist">New playlist</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="ui-panorama-item borrowed">
+        <h2>Borrowed</h2>
         <div class="panorama-item__content">
+          <h3 class="borrowed-date-title">Today</h3>
           <ul>
-            <li class="playlist-item">
-              <img src="http://imgsrc.me/60x60/9a1e1b/f3f3f3?">
-              <p>Playlist title</p>
+            {% for item in model.tracks %}
+            <li class="tracks__track">
+              <a href="/player">
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.artist }}</p>
+              </a>
+              <a href="" class="borrow-button"><i class="fa fa-lemon-o"></i></a>
             </li>
-            <li class="playlist-item">
-              <img src="http://imgsrc.me/60x60/9a1e1b/f3f3f3?">
-              <p>Playlist title</p>
+            {% endfor %}
+          </ul>
+          <h3 class="borrowed-date-title">Yesterday</h3>
+          <ul>
+            {% for item in model.tracks %}
+            <li class="tracks__track">
+              <a href="/player">
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.artist }}</p>
+              </a>
+              <a href="" class="borrow-button"><i class="fa fa-lemon-o"></i></a>
             </li>
-            <li class="playlist-item">
-              <img src="http://imgsrc.me/60x60/9a1e1b/f3f3f3?">
-              <p>Playlist title</p>
+            {% endfor %}
+          </ul>
+          <h3 class="borrowed-date-title">Last Month</h3>
+          <ul>
+            {% for item in model.tracks %}
+            <li class="tracks__track">
+              <a href="/player">
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.artist }}</p>
+              </a>
+              <a href="" class="borrow-button"><i class="fa fa-lemon-o"></i></a>
             </li>
-            <li class="playlist-item">
-              <img src="http://imgsrc.me/60x60/9a1e1b/f3f3f3?">
-              <p>Playlist title</p>
-            </li>
-            <li class="playlist-item">
-              <img src="http://imgsrc.me/60x60/9a1e1b/f3f3f3?">
-              <p>Playlist title</p>
-            </li>
+            {% endfor %}
           </ul>
         </div>
       </div>
 
       <div class="ui-panorama-item borrowed">
-        <h2>borrowed</h2>
-        <div class="panorama-item__content">
-          <ul>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-            <li><a href="/player">{{ "100x100" | placeholder:'9a1e1b','f3f3f3' | image_tag }}</a></li>
-          </ul>
-        </div>
+        <h2>Inbox</h2>
+        <ul>
+          {% for item in model.inbox %}
+          <li class="tracks__track">
+            <a href="/player">
+              <h3>{{ item.title }}</h3>
+              <p>{{ item.artist }}</p>
+              <p>Sent by {{ item.sentBy }} yesterday</p>
+            </a>
+            <a href="" class="borrow-button"><i class="fa fa-lemon-o"></i></a>
+          </li>
+          {% endfor %}
+        </ul>
       </div>
+
+      <div class="ui-panorama-item menu">
+        <ul>
+          <li><a href="/radio"><span>all radio</span></a></li>
+          <li><a href="/library"><span>library</span></a></li>
+          <li><a href="/account"><span>account</span></a></li>
+          <li><a href="/settings"><span>settings</span></a></li>
+          <li><a href="/subscriptions"><span>subscriptions</span></a></li>
+          <li><a href="/history"><span>history</span></a></li>
+        </ul>
+      </div>
+
     </div>
   </div>
 </div>

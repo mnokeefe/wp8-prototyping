@@ -1,0 +1,144 @@
+{
+  "name": "Library",
+  "albums": [
+    {
+      "title": "Out of our heads",
+      "artist": "The Rolling Stones"
+    },
+    {
+      "title": "Aftermath",
+      "artist": "The Rolling Stones"
+    },
+    {
+      "title": "Between the Buttons",
+      "artist": "The Rolling Stones"
+    },
+    {
+      "title": "Beggars Banquet",
+      "artist": "The Rolling Stones"
+    },
+    {
+      "title": "Let it Bleed",
+      "artist": "The Rolling Stones"
+    },
+    {
+      "title": "Sticky Fingers",
+      "artist": "The Rolling Stones"
+    }
+  ],
+  "tracks": [
+    {
+      "title": "Beast Of Burden (Remastered)",
+      "artist": "The Rolling Stones"
+    },
+    {
+      "title": "Before They Make Me Run (Remastered)",
+      "artist": "The Rolling Stones"
+    },
+    {
+      "title": "Far Away Eyes (Remastered)",
+      "artist": "The Rolling Stones"
+    },
+    {
+      "title": "Gimme Shelter",
+      "artist": "The Rolling Stones"
+    },
+    {
+      "title": "Just My Imagination (Running Away With Me)(Remixed)",
+      "artist": "The Rolling Stones"
+    },
+    {
+      "title": "Some Girls (Remastered)",
+      "artist": "The Rolling Stones"
+    },
+    {
+      "title": "Shattered (Remastered)",
+      "artist": "The Rolling Stones"
+    },
+    {
+      "title": "She Said Yeah",
+      "artist": "The Rolling Stones"
+    },
+    {
+      "title": "Soul Survivor",
+      "artist": "The Rolling Stones"
+    },
+    {
+      "title": "Sympathy For The Devil",
+      "artist": "The Rolling Stones"
+    }
+  ],  
+  "artists": [
+    {
+      "name": "Portico Quartet"
+    },
+    {
+      "name": "Christian Scott"
+    },
+    {
+      "name": "Jens Lekman"
+    },
+    {
+      "name": "Mew"
+    },
+    {
+      "name": "M83"
+    },
+    {
+      "name": "The Radio Dept."
+    },
+    {
+      "name": "Lee Morgan"
+    },
+    {
+      "name": "Super Furry Animals"
+    },
+    {
+      "name": "Belle and Sebastian"
+    },
+    {
+      "name": "Gonzales"
+    },
+    {
+      "name": "Youngblood Brass Band"
+    },
+    {
+      "name": "Joni Mitchell"
+    }
+  ],
+  "playlists": [
+    {
+      "title": "Early 90s Hip Hop",
+      "totalTracks": "59"
+    },
+    {
+      "title": "Contemporary NOLA",
+      "totalTracks": "157"
+    },
+    {
+      "title": "Now is the summer of my disco tent",
+      "totalTracks": "7"
+    },
+    {
+      "title": "BRASS IN YO FACE",
+      "totalTracks": "24"
+    }
+  ],
+  "inbox": [
+    {
+      "title": "U Can't Touch This",
+      "artist": "MC Hammer",
+      "sentBy": "mnokeefe"
+    },
+    {
+      "title": "Barbie Girl",
+      "artist": "Aqua",
+      "sentBy": "goldstos"
+    },
+    {
+      "title": "Mr Blobby",
+      "artist": "Mr Blobby",
+      "sentBy": "goldstos"
+    }
+  ]
+}

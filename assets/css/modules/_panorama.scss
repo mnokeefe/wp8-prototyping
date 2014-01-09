@@ -3,18 +3,21 @@
   -ms-content-zooming: none;
   -ms-touch-action: none;
 }
+
 .ui-panorama h1 {
   margin-top: 0px;
   position: absolute;
   top: 1rem;
   left: 1rem;
-  z-index: 10
-;}
+  z-index: 10;
+}
+
 .ui-panorama .ui-panorama-item h2,
 .ui-panorama h1 {
   overflow: hidden;
   white-space: nowrap;
 }
+
 .ui-panorama .ui-panorama-items {
   position: relative;
 }
@@ -22,15 +25,16 @@
 .ui-panorama-items {
   display: none;
 }
+
 .ui-loader {
   display: none;
 }
 
 .ui-panorama-item {
   position: absolute;
-  top: 0;
+  top: 7rem;
   left: 0;
-  padding: 8rem 1rem 1rem 1rem;
+  padding: 1rem 1rem 8rem 1rem;
   overflow: hidden;
   opacity: 0.8;
   img {

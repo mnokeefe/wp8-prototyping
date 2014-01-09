@@ -1,34 +1,41 @@
 {% block content %} 
-<div class="ui-panorama-item-active">
-  <div class="page-header--player">
-    <h1>I'm Free • The Rolling Stones</h1>
+<div class="ui-panorama-item-active player">
+  <div class="player__header">
+    <h1>I'm Free - The Rolling Stones</h1>
     <span>The Rolling Stones Radio</span>
     <a><i class="fa fa-list-ul"></i></a>
   </div>
-  <div class="placeholder">Progress bar</div>
+  <img src="{{ "progress.png" | asset_url }}">
   <img class="player__image" src="http://imgsrc.me/300x300/9a1e1b/f3f3f3/album art?showDimensions=0&">
-  <div class="placeholder">Player controls</div>
+  <ul class="player__controls">
+    <li><a href="/discover"><i class="fa fa-spinner"></i></a></li>
+    <li><a><i class="fa fa-backward"></i></a></li>
+    <li><a><i class="fa fa-pause"></i></a></li>
+    <li><a><i class="fa fa-forward"></i></a></li>
+    <li><a><i class="fa fa-lemon-o"></i></a></li>
+  </ul>
 
   <ul class="js-app-bar-icons">
+    <!-- TODO: Good/bad is radio repeat/shuffle instead for lists -->
     <li class="app-bar__item js-icon-added">
-      <span class="app-bar__icon"><i class="fa fa-thumbs-o-up"></i></span>
-      <p>Good</p>
+      <a class="app-bar__icon"><i class="fa fa-thumbs-o-up"></i></a>
+      <a class="app-bar__label" href="">Good</a>
     </li>
     <li class="app-bar__item js-icon-added">
-      <span class="app-bar__icon"><i class="fa fa-thumbs-o-down"></i></span>
-      <p>Bad</p>
+      <a class="app-bar__icon"><i class="fa fa-thumbs-o-down"></i></a>
+      <a class="app-bar__label" href="">Bad</a>
     </li>
     <li class="app-bar__item js-icon-added">
-      <a class="app-bar__icon"><i class="fa fa-star"></i></a>
-      <p>Artist</p>
+      <a class="app-bar__icon" href="/artist"><i class="fa fa-star"></i></a>
+      <a class="app-bar__label" href="/artist">Artist</a>
     </li>
     <li class="app-bar__item js-icon-added">
       <a class="app-bar__icon"><i class="fa fa-plus"></i></a>
-      <p>Add to playlist</p>
+      <a class="app-bar__label" href="">Add to playlist</a>
     </li>
     <li class="app-bar__item js-icon-added">
-      <a class="app-bar__icon"><i class="fa fa-dot-circle-o"></i></a>
-      <p>Album page</p>
+      <a class="app-bar__icon" href="/album"><i class="fa fa-dot-circle-o"></i></a>
+      <a class="app-bar__label" href="/album">Album page</a>
     </li>
   </ul>
 </div>

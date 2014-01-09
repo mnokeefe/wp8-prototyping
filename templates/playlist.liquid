@@ -1,0 +1,38 @@
+{% block content %} 
+<div class="ui-panorama-item-active playlist">
+  <div class="page-header">
+    <span>Playlist</span>
+    <h1>Playlist title</h1>
+  </div>
+
+  <div class="playlist__image">
+    <img src="http://imgsrc.me/320x160/9a1e1b/f3f3f3/playlist image?showDimensions=0&">
+  </div>
+  <ul>
+    {% for item in model.tracks %}
+    <li class="tracks__track">
+      <a href="/player">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.artist }}</p>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <ul class="js-app-bar-icons">
+    <li class="app-bar__item">
+      <a class="app-bar__icon" href=""><i class="fa fa-pencil"></i></a>
+      <a class="app-bar__label" href="">Edit</a>
+    </li>
+    <li class="app-bar__item">
+      <a class="app-bar__icon" href="/radio"><i class="fa fa-share"></i></a>
+      <a class="app-bar__label" href="/radio">Share</a>
+    </li>
+    <li class="app-bar__item">
+      <a class="app-bar__icon" href=""><i class="fa fa-lemon-o"></i></a>
+      <a class="app-bar__label" href="">Return all</a>
+    </li>
+  </ul>
+</div>
+{% include "app-bar" %}
+{% endblock %}
