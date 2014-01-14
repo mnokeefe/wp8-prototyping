@@ -1,0 +1,40 @@
+{% model "playlist.json" %}
+
+{% block content %} 
+<div class="ui-panorama-item-active playlist">
+  <div class="page-header">
+    <span>Playlist</span>
+    <h1><input type="text" value="Playlist title"></h1>
+  </div>
+
+  <ul>
+    {% for item in model.tracks %}
+    <li class="tracks__track">
+      <a href="/player">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.artist }}</p>
+      </a>
+      <a href="" class="drag-button"><i class="fa fa-bars"></i></a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<nav class="app-bar">
+  <div class="js-app-bar app-bar__container">
+    <ul class="app-bar__items">
+    <li class="app-bar__item">
+      <a class="app-bar__icon" href="/playlist"><i class="fa fa-check"></i></a>
+      <a class="app-bar__label" href="/playlist">Save</a>
+    </li>
+    <li class="app-bar__item">
+      <a class="app-bar__icon" href="/playlist"><i class="fa fa-times"></i></a>
+      <a class="app-bar__label" href="/playlist">Cancel</a>
+    </li>
+    </ul>
+    <span class="app-bar__expand js-app-bar-expand"><i class="fa fa-ellipsis-h"></i></span>
+    <div class="app-bar__extra-items"></div>
+  </div>
+</nav>
+
+{% endblock %}

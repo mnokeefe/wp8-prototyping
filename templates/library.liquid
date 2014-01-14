@@ -6,6 +6,7 @@
 
       <div class="ui-panorama-item ui-panorama-item-active">
         <h2>Albums</h2>
+        <input class="library-filter" type="text" value="search">
         <ul>
           {% for item in model.albums %}
           <li class="album">
@@ -21,6 +22,7 @@
 
       <div class="ui-panorama-item tracks">
         <h2>Artists</h2>
+        <input class="library-filter" type="text" value="search">
         <ul>
           {% for item in model.artists %}
           <li class="tracks__track">
@@ -42,6 +44,7 @@
               <h3>{{ item.title }}</h3>
               <p>{{ item.totalTracks }} tracks</p>
             </a>
+            <a href="" class="drag-button"><i class="fa fa-bars"></i></a>
           </li>
           {% endfor %}
         </ul>
@@ -55,6 +58,7 @@
 
       <div class="ui-panorama-item borrowed">
         <h2>Borrowed</h2>
+        <input class="library-filter" type="text" value="search">
         <div class="panorama-item__content">
           <h3 class="borrowed-date-title">Today</h3>
           <ul>
@@ -98,13 +102,14 @@
 
       <div class="ui-panorama-item tracks">
         <h2>Inbox</h2>
+        <h3 class="borrowed-date-title">Yesterday</h3>
         <ul>
           {% for item in model.inbox %}
           <li class="tracks__track">
             <a href="/player">
               <h3>{{ item.title }}</h3>
               <p>{{ item.artist }}</p>
-              <p>Sent by {{ item.sentBy }} yesterday</p>
+              <p>Sent by {{ item.sentBy }}</p>
             </a>
             <a href="" class="borrow-button"><i class="fa fa-lemon-o"></i></a>
           </li>

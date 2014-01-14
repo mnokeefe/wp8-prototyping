@@ -496,15 +496,14 @@ h2 {
   margin: 0; }
 
 .player__header {
-  text-align: center;
-  padding: 1rem 0;
+  padding: 1rem 0 1rem 3rem;
   font-weight: 300; }
   .player__header a {
-    font-size: 2rem;
     position: absolute;
-    right: 1rem;
-    top: 1rem;
-    line-height: 2rem; }
+    left: 1rem;
+    top: 1rem; }
+    .player__header a img {
+      width: 1rem; }
   .player__header h1 {
     font-size: 1.6rem;
     font-weight: 400;
@@ -520,11 +519,24 @@ h2 {
       font-size: 2.5rem;
       padding: 1rem; }
 
+.library-filter {
+  width: 95%;
+  margin-bottom: 1rem;
+  height: 2rem; }
+
 .playlist__image {
-  margin: 0 1rem 0 1rem; }
+  margin: 0 1rem 0 1rem;
+  overflow: hidden; }
   .playlist__image img {
     width: 100%;
     margin-bottom: 1rem; }
+
+.playlist {
+  position: relative; }
+  .playlist input {
+    width: 95%; }
+  .playlist .borrow-button, .playlist .drag-button {
+    top: 2rem; }
 
 html {
   background: #fbfbf9; }
@@ -551,13 +563,14 @@ a {
     width: 85%; }
 
 .tracks .tracks__track {
+  position: relative;
   padding: 1rem 0; }
 
-.borrow-button {
+.borrow-button, .drag-button {
   position: absolute;
   right: 1rem;
   top: 25%; }
-  .borrow-button i {
+  .borrow-button i, .drag-button i {
     font-size: 1.5rem; }
 
 .tracks__played-time {

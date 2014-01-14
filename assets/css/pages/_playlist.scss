@@ -1,7 +1,22 @@
 .playlist__image {
   margin: 0 1rem 0 1rem;
+  overflow: hidden;
   img {
     width: 100%;
     margin-bottom: 1rem;
   }
+}
+
+.playlist {
+  position: relative;
+  input {
+    width: 95%;
+  }
+  .borrow-button {
+    top: 2rem;
+  }
+}
+
+.drag-button {
+  @extend .borrow-button;
 }

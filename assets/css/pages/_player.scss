@@ -6,15 +6,15 @@
 }
 
 .player__header {
-  text-align: center;
-  padding: 1rem 0;
+  padding: 1rem 0 1rem 3rem;
   font-weight: 300;
   a {
-    font-size: 2rem;
     position: absolute;
-    right: 1rem;
+    left: 1rem;
     top: 1rem;
-    line-height: 2rem;
+    img {
+      width: 1rem;
+    }
   }
   h1 {
     font-size: 1.6rem;

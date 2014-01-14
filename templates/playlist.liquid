@@ -15,18 +15,19 @@
         <h3>{{ item.title }}</h3>
         <p>{{ item.artist }}</p>
       </a>
+      <a href="" class="borrow-button"><i class="fa fa-lemon-o"></i></a>
     </li>
     {% endfor %}
   </ul>
 
   <ul class="js-app-bar-icons">
     <li class="app-bar__item">
-      <a class="app-bar__icon" href=""><i class="fa fa-pencil"></i></a>
-      <a class="app-bar__label" href="">Edit</a>
+      <a class="app-bar__icon" href="/playlist-edit"><i class="fa fa-pencil"></i></a>
+      <a class="app-bar__label" href="/playlist-edit">Edit</a>
     </li>
     <li class="app-bar__item">
-      <a class="app-bar__icon" href="/radio"><i class="fa fa-share"></i></a>
-      <a class="app-bar__label" href="/radio">Share</a>
+      <a class="app-bar__icon" href="/share"><i class="fa fa-share"></i></a>
+      <a class="app-bar__label" href="/share">Share</a>
     </li>
     <li class="app-bar__item">
       <a class="app-bar__icon" href=""><i class="fa fa-lemon-o"></i></a>
